@@ -17,7 +17,7 @@ export default function QuizActions({ maxSteps }: { maxSteps: number }) {
   const isBackDisabled = activeStep <= 1;
 
   return (
-    <div className="flex justify-between w-full mb-2">
+    <div className="flex justify-between w-full my-2">
       <Button asChild variant={isBackDisabled ? "secondary" : "default"}>
         <Link
           aria-disabled={isBackDisabled}

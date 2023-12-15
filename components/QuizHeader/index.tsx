@@ -27,7 +27,7 @@ export default function QuizHeader({ maxSteps }: { maxSteps: number }) {
           </Link>
         </Button>
       </div>
-      <Progress value={activeStep} max={maxSteps} />
+      <Progress value={activeStep} max={maxSteps} className="mb-2" />
     </>
   );
 }

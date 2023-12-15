@@ -17,7 +17,10 @@ export default function QuizStep({ slug, questions }: QuizStepProps) {
 
   return (
     <div>
-      <h2>{data.question}</h2>
+      <h2 className="text-xl mb-2">{data.question}</h2>
+      {quizType === "multiple" ? (
+        <h4 className="text-sm mb-4">You can choose more than one option</h4>
+      ) : null}
       {quizType === "multiple" ? (
         data.options.map((option) => (
           <div key={option} className="flex items-center space-x-2">

@@ -16,7 +16,7 @@ export default async function QuizLayout({
   const questions = await getQuestions();
   const maxSteps = questions.length;
   return (
-    <main className="flex min-h-screen flex-col items-center p-24">
+    <main className="flex min-h-screen flex-col items-center p-24 max-w-screen-sm mx-auto">
       <QuizHeader maxSteps={maxSteps} />
       {children}
       <QuizActions maxSteps={maxSteps} />
