@@ -10,4 +10,6 @@ export function getLocalStorageData(key: string) {
     const storedDataString = localStorage.getItem(key);
     return storedDataString ? JSON.parse(storedDataString) : {};
   }
+
+  return {};
 }
