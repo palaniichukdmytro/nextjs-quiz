@@ -28,7 +28,7 @@ There are a couple approach how to implement wizard with persist state, I was co
 
  End up with local storage and dynamic import  + SSG for slug quiz + tailwind + <https://ui.shadcn.com/> UI components
 
-As well I saw some improvements in code organization and unifying some helpers and methods that was not require during 4-5 session.
+As well I saw some improvements in code organization and unifying some helpers and methods that was not possible during 4-5 hours session. 
 
 ## Deployed on Vercel
 <https://promova-quiz.vercel.app/>
