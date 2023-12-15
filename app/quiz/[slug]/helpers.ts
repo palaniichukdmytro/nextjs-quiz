@@ -13,7 +13,7 @@ export function getQuestionsForSlug({
   );
 
   if (questionData) {
-    const answers = storedQuizData[slug]?.answers;
+    const answers = storedQuizData?.[slug]?.answers;
     return { ...questionData, answers };
   }
 

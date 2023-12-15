@@ -6,6 +6,8 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export function getLocalStorageData(key: string) {
-  const storedDataString = localStorage.getItem(key);
-  return storedDataString ? JSON.parse(storedDataString) : {};
+  if (typeof window !== "undefined") {
+    const storedDataString = localStorage.getItem(key);
+    return storedDataString ? JSON.parse(storedDataString) : {};
+  }
 }
