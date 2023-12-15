@@ -20,4 +20,15 @@ bun dev
 
 ## Overall vision
 
-## Deploy on Vercel
+There are a couple approach how to implement wizard with persist state, I was considering such options
+
+- context api + lazy loading as one component with steps
+- dynamic route with next js + PPR (does not work well )
+- local storage + react hook form + zod validation + server action + optimistic update + PPR and skeleton ( Ideal scenario but had lack of time )
+
+ End up with local storage and dynamic import  + SSG for slug quiz + tailwind + <https://ui.shadcn.com/> UI components
+
+As well I saw some improvements in code organization and unifying some helpers and methods that was not require during 4-5 session.
+
+## Deployed on Vercel
+<https://promova-quiz.vercel.app/>
